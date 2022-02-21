@@ -16,21 +16,26 @@ Human-Robot Interaction is a currently highly active research area with many adv
 
 Unity's [Object Pose Estimation Demo](https://github.com/Unity-Technologies/Robotics-Object-Pose-Estimation) was used as a reference for the implementation of the social cues. The tutorial was modified to fit our needs.
 
-Firstly, an improvement to the overall motion planner was made by replacing the [RRTConnect](https://doi.org/10.1109/ROBOT.2000.844730) algorithm with the [RRT*](https://arxiv.org/abs/1105.1186) algorithm. This alteration improved the movements of the robot significantly.
+Firstly, an improvement to the overall motion planner was made by replacing the [RRTConnect](https://doi.org/10.1109/ROBOT.2000.844730) algorithm with the [RRT*](https://arxiv.org/abs/1105.1186) algorithm. This alteration improved the movements of the robot significantly. The animations below show examples of the robot's movements with the two motion planning algorithms (**Left: RRTConnect, Right: RRT\***).
 
 
-[//]: # (colocar gif dos dois algoritmos a fazer o mesmo)
+<p align="center">
+    <img src="Images/RRTConnect.gif" alt="The robot's path is constructed with the RRTConnect algorithm" style="height: 300px;"/>
+    <img src="Images/RRTstar.gif" alt="The robot's path is constructed with the RRTstar algorithm" style="height: 300px;"/>
+</p>
 
 
 ### Circular Motion
 
 The implemented proof of concept consists in restraining the pick-and-place action of the robot to a specific cube orientation. As such, incomming messages from Unity were checked for the orientation of the cube in the Y axis. If the cube is in the correct orientation the robot will place it in the goal position. Otherwise, the robot will notify the user with a circular gesture that the cube needs to be rotated. The user can interact with the cube to rotate it using the keyboard.
 
-[//]: # (colocar gif do circular motion)
+<p align="center">
+    <img src="Images/robot-behavior.gif" alt="The Robot's Behavior" style="height: 300px;"/>
+</p>
 
-## Citation
+[//]: # (## Citation)
 
-If you find this an interesting project and are interested in Human-Robot interactions please cite our paper:
+[//]: # (If you find this an interesting project and are interested in Human-Robot interactions please cite our paper:)
     
 [//]: # (colocar bibtex do paper)
 
