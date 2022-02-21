@@ -16,7 +16,7 @@ Human-Robot Interaction is a currently highly active research area with many adv
 
 Unity's [Object Pose Estimation Demo](https://github.com/Unity-Technologies/Robotics-Object-Pose-Estimation) was used as a reference for the implementation of the social cues. The tutorial was modified to fit our needs.
 
-Firstly, an improvement to the overall motion planner was made by replacing the [RRTConnect](https://doi.org/10.1109/ROBOT.2000.844730) algorithm with the [RRT*](https://arxiv.org/abs/1105.1186) algorithm. This alteration improved the movements of the robot significantly. The animations below show examples of the robot's movements with the two motion planning algorithms (**Left: RRTConnect, Right: RRT\***).
+Firstly, an improvement to the overall motion planner was made by replacing the [RRTConnect](https://doi.org/10.1109/ROBOT.2000.844730) algorithm with the [RRT*](https://arxiv.org/abs/1105.1186) algorithm. This alteration improved the movements of the robot significantly. The animations below show examples of the robot's movements with the two motion planning algorithms (**Up: RRTConnect, Down: RRT\***).
 
 
 <p align="center">
